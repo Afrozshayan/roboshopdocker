@@ -6,9 +6,9 @@ COPY *.py .
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 ENV CART_HOST="cart" \
-    CART_PORT=8080 \
+    CART_PORT="8080" \
     USER_HOST="user" \
-    USER_PORT=8080 \
+    USER_PORT="8080" \
     AMQP_HOS="rabbitmq" \
     AMQP_USER="roboshop" \
     AMQP_PASS="roboshop123"
