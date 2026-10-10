@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM pythone:3.9.25-alpine3.229
 EXPOSE 8080
 WORKDIR /opt/server
 COPY payment.ini .

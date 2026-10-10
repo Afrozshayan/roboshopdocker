@@ -1,4 +1,4 @@
-FROM maven:3.9.11
+FROM maven:3.9.11-eclipse-temurin-25-alpine
 EXPOSE 8080
 WORKDIR /opt/server
 COPY pom.xml .
