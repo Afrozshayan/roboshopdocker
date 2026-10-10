@@ -1,0 +1,10 @@
+services:
+  mongodb:
+    image: mongodb:v1
+  container_name: mongodb
+
+network:
+  default
+    driver: bridge
+    name: roboshop
+    external: false # if true means you have created in network manaully by suing docker command
