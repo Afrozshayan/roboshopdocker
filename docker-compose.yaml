@@ -10,7 +10,7 @@ services:
     build: ./mongodb
     dockerfile: Dockerfile
     image: mongodb:v1
-    container_name: bashaafroz/mongodb
+    container_name: bashaafroz/mongodb:v1
     volumes:
     - mongodb:/data/db
   redis:
