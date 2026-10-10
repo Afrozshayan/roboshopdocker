@@ -1,11 +1,10 @@
-FROM python:3.9.25-alpine3.21
+FROM python:3.9-alpine
 EXPOSE 8080
 WORKDIR /opt/server
-COPY payment.ini .
-COPY *.py .
 COPY requirements.txt .
-RUN apk add --no-cache gcc musl-dev python3-dev linux-headers
+RUN apk add --no-cache gcc musl-dev linux-headers
 RUN pip3 install --prefix=/install -r requirements.txt
+COPY . .
 ENV CART_HOST="cart" \
     CART_PORT="8080" \
     USER_HOST="user" \
