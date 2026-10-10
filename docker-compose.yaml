@@ -12,7 +12,7 @@ services:
     container_name: redis
   mysql:
     image: mysql:v1
-    conatainer_name: mysql
+    container_name: mysql
   rabbitmq:
     image: rabbitmq:3
     container_name: rabbitmq
